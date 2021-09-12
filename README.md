@@ -1,2 +1,2 @@
 # Hopperz
-A Hopperz clone app
+A Hoppz clone app
