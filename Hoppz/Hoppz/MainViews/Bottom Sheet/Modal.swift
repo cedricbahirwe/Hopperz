@@ -14,10 +14,10 @@ enum ModalState: CGFloat {
     func offsetFromTop() -> CGFloat {
         switch self {
         case .closed:
-            return UIScreen.main.bounds.height * 0.89
+            return UIScreen.main.bounds.height * 0.66
 //            return UIScreen.main.bounds.heightg
         case .partiallyRevealed:
-            return UIScreen.main.bounds.height * 0.89
+            return UIScreen.main.bounds.height * 0.66
         case .open:
             return 0
         }
@@ -29,78 +29,6 @@ struct Modal {
     var dragOffset: CGSize = .zero
     var content: AnyView?
 }
-
-
-struct ModalAnchorView: View {
-    
-    @EnvironmentObject var modalManager: ModalManager
-    
-    var body: some View {
-        VStack {
-            ModalView(modal: $modalManager.modal)
-
-        }
-        .onAppear() {
-            modalManager.newModal(position: .partiallyRevealed) {
-                exploreView
-            }
-        }
-    }
-    
-    private var exploreView: some View {
-        VStack(alignment: .leading) {
-            Text("Explore")
-                .font(.largeTitle.weight(.semibold))
-                .opacity(0.9)
-                .padding(.vertical)
-            Text("No Establishments Nearby").bold()
-                .padding()
-                .frame(maxWidth: .infinity)
-            ScrollView {
-                VStack(spacing: 0) {
-                    ForEach(0 ..< 5) { item in
-                        HStack {
-                            Image(systemName: "person.fill")
-                                .resizable()
-                                .padding(5)
-                                .frame(width: 40, height: 40)
-                                .background(Color.white)
-                                .clipShape(Circle())
-                                .overlay(Circle().strokeBorder(Color.green, lineWidth: 1))
-                            
-                            VStack(alignment: .leading) {
-                                Text("Cedric Bahirwe").bold()
-                                    .foregroundColor(.green)
-                                
-                                Text("MIT University")
-                                    .font(.caption)
-                                
-                            }
-                            Spacer()
-                            
-                            Label(
-                                title: {
-                                    Text("\((500...15000).randomElement()!)")
-                                        .foregroundColor(.green)
-                                },
-                                icon: {
-                                    Image(systemName: "42.circle")
-                                        .imageScale(.large)
-                                        .foregroundColor(.yellow)
-                                }
-                            )
-                        }
-                        .padding(.vertical, 10)
-                        .overlay(Color.gray.frame(height: 1), alignment: .bottom)
-                    }
-                }
-            }
-        }
-        .padding(10)
-        .padding(.top, 45)
-    }
-}
-
 
 class ModalManager: ObservableObject {
     
@@ -151,8 +79,8 @@ struct ModalView: View {
                     modal.content
                         .frame(height: UIScreen.main.bounds.height - (modal.position.offsetFromTop() + geometry.safeAreaInsets.top + dragState.translation.height))
                 }
-                .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                .offset(y: max(0, modal.position.offsetFromTop() + dragState.translation.height + geometry.safeAreaInsets.top))
+                .mask(RoundedRectangle(cornerRadius: modal.position == .open ? 0 : 30, style: .continuous))
+                .offset(y: max(0, modal.position.offsetFromTop() + dragState.translation.height))
                 .gesture(drag)
                 .animation(dragState.isDragging ? nil : animation)
             }
