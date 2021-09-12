@@ -16,6 +16,7 @@
 		82190ADC26EE0ADB005028B4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADB26EE0ADB005028B4 /* FeedView.swift */; };
 		82190ADE26EE0AE2005028B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADD26EE0AE2005028B4 /* SettingsView.swift */; };
 		82190AE026EE0AFD005028B4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADF26EE0AFD005028B4 /* TabBarView.swift */; };
+		82A63DB226EE177A0028E3DC /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A63DB126EE177A0028E3DC /* Modal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		82190ADB26EE0ADB005028B4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		82190ADD26EE0AE2005028B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		82190ADF26EE0AFD005028B4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		82A63DB126EE177A0028E3DC /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,8 @@
 			children = (
 				82190AC826EE0A10005028B4 /* HoppzApp.swift */,
 				82190ACA26EE0A10005028B4 /* ContentView.swift */,
-				82190AD726EE0A3F005028B4 /* HomeView.swift */,
-				82190ADB26EE0ADB005028B4 /* FeedView.swift */,
-				82190ADD26EE0AE2005028B4 /* SettingsView.swift */,
-				82190AD926EE0AC4005028B4 /* TopHeaderView.swift */,
-				82190ADF26EE0AFD005028B4 /* TabBarView.swift */,
+				82A63DAF26EE17490028E3DC /* Reusable Views */,
+				82A63DAE26EE173C0028E3DC /* MainViews */,
 				82190ACC26EE0A12005028B4 /* Assets.xcassets */,
 				82190AD126EE0A13005028B4 /* Info.plist */,
 				82190ACE26EE0A13005028B4 /* Preview Content */,
@@ -82,6 +81,34 @@
 				82190ACF26EE0A13005028B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82A63DAE26EE173C0028E3DC /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				82A63DB026EE17680028E3DC /* Bottom Sheet */,
+				82190AD726EE0A3F005028B4 /* HomeView.swift */,
+				82190ADB26EE0ADB005028B4 /* FeedView.swift */,
+				82190ADD26EE0AE2005028B4 /* SettingsView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		82A63DAF26EE17490028E3DC /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				82190AD926EE0AC4005028B4 /* TopHeaderView.swift */,
+				82190ADF26EE0AFD005028B4 /* TabBarView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		82A63DB026EE17680028E3DC /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				82A63DB126EE177A0028E3DC /* Modal.swift */,
+			);
+			path = "Bottom Sheet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +183,7 @@
 				82190ADC26EE0ADB005028B4 /* FeedView.swift in Sources */,
 				82190AD826EE0A3F005028B4 /* HomeView.swift in Sources */,
 				82190AE026EE0AFD005028B4 /* TabBarView.swift in Sources */,
+				82A63DB226EE177A0028E3DC /* Modal.swift in Sources */,
 				82190ADA26EE0AC4005028B4 /* TopHeaderView.swift in Sources */,
 				82190ADE26EE0AE2005028B4 /* SettingsView.swift in Sources */,
 				82190ACB26EE0A10005028B4 /* ContentView.swift in Sources */,
