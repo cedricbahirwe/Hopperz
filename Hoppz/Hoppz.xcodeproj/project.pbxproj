@@ -66,8 +66,8 @@
 			children = (
 				82190AC826EE0A10005028B4 /* HoppzApp.swift */,
 				82190ACA26EE0A10005028B4 /* ContentView.swift */,
-				82A63DAF26EE17490028E3DC /* Reusable Views */,
 				82A63DAE26EE173C0028E3DC /* MainViews */,
+				82A63DAF26EE17490028E3DC /* Reusable Views */,
 				82190ACC26EE0A12005028B4 /* Assets.xcassets */,
 				82190AD126EE0A13005028B4 /* Info.plist */,
 				82190ACE26EE0A13005028B4 /* Preview Content */,
@@ -86,10 +86,10 @@
 		82A63DAE26EE173C0028E3DC /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
-				82A63DB026EE17680028E3DC /* Bottom Sheet */,
 				82190AD726EE0A3F005028B4 /* HomeView.swift */,
 				82190ADB26EE0ADB005028B4 /* FeedView.swift */,
 				82190ADD26EE0AE2005028B4 /* SettingsView.swift */,
+				82A63DB026EE17680028E3DC /* Bottom Sheet */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
