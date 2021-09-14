@@ -23,7 +23,7 @@ struct HomeView: View {
         }
         .clipped()
         .onAppear(){
-            modalManager.newModal(position: .partiallyRevealed) {
+            modalManager.newModal(position: .open) {
                 exploreView
             }
         }
@@ -33,6 +33,7 @@ struct HomeView: View {
             Text("Explore")
                 .font(.largeTitle.weight(.semibold))
                 .opacity(0.9)
+                .padding()
             Text("No Establishments Nearby").bold()
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -49,10 +50,10 @@ struct HomeView: View {
                                 .overlay(Circle().strokeBorder(Color.mainGreen, lineWidth: 1))
                             
                             VStack(alignment: .leading) {
-                                Text("Cedric Bahirwe").bold()
+                                Text("Alexander Bahirwe").bold()
                                     .foregroundColor(.mainGreen)
                                 
-                                Text("MIT University")
+                                Text("ABC University")
                                     .font(.caption)
                                 
                             }
@@ -62,21 +63,25 @@ struct HomeView: View {
                                 title: {
                                     Text("\((500...15000).randomElement()!)")
                                         .foregroundColor(.mainGreen)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.9)
+                                        .frame(maxWidth: 58)
                                 },
                                 icon: {
-                                    Image(systemName: "42.circle")
+                                    Image(systemName: "staroflife.circle.fill")
                                         .imageScale(.large)
                                         .foregroundColor(.yellow)
+                                        .offset(x: 8)
                                 }
                             )
                         }
                         .padding(.vertical, 10)
-                        .overlay(Color.gray.frame(height: 1), alignment: .bottom)
+                        .padding(.horizontal, 10)
+                        .overlay(Color.gray.frame(height: 0.5), alignment: .bottom)
                     }
                 }
             }
         }
-        .padding(10)
     }
 }
 
