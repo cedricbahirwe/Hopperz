@@ -34,7 +34,7 @@ class ModalManager: ObservableObject {
     
     @Published var modal: Modal = Modal(position: .partiallyRevealed, content: nil)
     
-    func newModal<Content: View>(position: ModalState, @ViewBuilder content: () -> Content ) {
+    func newModal<Content: View>(position: ModalState = .partiallyRevealed, @ViewBuilder content: () -> Content ) {
         modal = Modal(position: position, content: AnyView(content()))
     }
     

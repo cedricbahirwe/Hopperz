@@ -23,7 +23,7 @@ struct HomeView: View {
         }
         .clipped()
         .onAppear(){
-            modalManager.newModal(position: .open) {
+            modalManager.newModal(position: .partiallyRevealed) {
                 exploreView
             }
         }
