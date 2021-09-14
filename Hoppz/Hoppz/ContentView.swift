@@ -10,11 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTab = 2
     var body: some View {
-        VStack(spacing: 0) {
-            
-            TopHeaderView()
-            ContainerView(selectedTab: $selectedTab)
-            TabBarView(selection: $selectedTab)
+        NavigationView {
+            VStack(spacing: 0) {
+                
+                TopHeaderView()
+                ContainerView(selectedTab: $selectedTab)
+                TabBarView(selection: $selectedTab)
+            }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

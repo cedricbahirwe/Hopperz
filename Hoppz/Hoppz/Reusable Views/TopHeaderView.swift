@@ -15,16 +15,20 @@ struct TopHeaderView: View {
             .foregroundColor(.green)
             .frame(maxWidth: .infinity)
             .overlay(
-                Label(
-                    title: {
-                        Text("1030")
-                            .foregroundColor(.green)
-                    },
-                    icon: {
-                        Image(systemName: "42.circle")
-                            .foregroundColor(.yellow)
-                    }
-                )
+                NavigationLink(
+                    destination: PointsView()) {
+                    Label(
+                        title: {
+                            Text("1030")
+                                .foregroundColor(.green)
+                        },
+                        icon: {
+                            Image(systemName: "staroflife.circle.fill")
+                                .imageScale(.large)
+                                .foregroundColor(.yellow)
+                        }
+                    )
+                }
                 , alignment: .leading
             )
             .padding(10)

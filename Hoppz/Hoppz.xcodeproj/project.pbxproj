@@ -16,6 +16,7 @@
 		82190ADC26EE0ADB005028B4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADB26EE0ADB005028B4 /* FeedView.swift */; };
 		82190ADE26EE0AE2005028B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADD26EE0AE2005028B4 /* SettingsView.swift */; };
 		82190AE026EE0AFD005028B4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADF26EE0AFD005028B4 /* TabBarView.swift */; };
+		828F4ABC26F1129B0058A303 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F4ABB26F1129B0058A303 /* PointsView.swift */; };
 		82A63DB226EE177A0028E3DC /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A63DB126EE177A0028E3DC /* Modal.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		82190ADB26EE0ADB005028B4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		82190ADD26EE0AE2005028B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		82190ADF26EE0AFD005028B4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		828F4ABB26F1129B0058A303 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		82A63DB126EE177A0028E3DC /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				82190AD726EE0A3F005028B4 /* HomeView.swift */,
 				82190ADB26EE0ADB005028B4 /* FeedView.swift */,
 				82190ADD26EE0AE2005028B4 /* SettingsView.swift */,
+				828F4ABB26F1129B0058A303 /* PointsView.swift */,
 				82A63DB026EE17680028E3DC /* Bottom Sheet */,
 			);
 			path = MainViews;
@@ -182,6 +185,7 @@
 			files = (
 				82190ADC26EE0ADB005028B4 /* FeedView.swift in Sources */,
 				82190AD826EE0A3F005028B4 /* HomeView.swift in Sources */,
+				828F4ABC26F1129B0058A303 /* PointsView.swift in Sources */,
 				82190AE026EE0AFD005028B4 /* TabBarView.swift in Sources */,
 				82A63DB226EE177A0028E3DC /* Modal.swift in Sources */,
 				82190ADA26EE0AC4005028B4 /* TopHeaderView.swift in Sources */,
