@@ -17,6 +17,7 @@
 		82190ADE26EE0AE2005028B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADD26EE0AE2005028B4 /* SettingsView.swift */; };
 		82190AE026EE0AFD005028B4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82190ADF26EE0AFD005028B4 /* TabBarView.swift */; };
 		828F4ABC26F1129B0058A303 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F4ABB26F1129B0058A303 /* PointsView.swift */; };
+		828F4ABE26F11A240058A303 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F4ABD26F11A240058A303 /* Colors+Extensions.swift */; };
 		82A63DB226EE177A0028E3DC /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A63DB126EE177A0028E3DC /* Modal.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		82190ADD26EE0AE2005028B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		82190ADF26EE0AFD005028B4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		828F4ABB26F1129B0058A303 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		828F4ABD26F11A240058A303 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
 		82A63DB126EE177A0028E3DC /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			children = (
 				82190AC826EE0A10005028B4 /* HoppzApp.swift */,
 				82190ACA26EE0A10005028B4 /* ContentView.swift */,
+				828F4ABD26F11A240058A303 /* Colors+Extensions.swift */,
 				82A63DAE26EE173C0028E3DC /* MainViews */,
 				82A63DAF26EE17490028E3DC /* Reusable Views */,
 				82190ACC26EE0A12005028B4 /* Assets.xcassets */,
@@ -192,6 +195,7 @@
 				82190ADE26EE0AE2005028B4 /* SettingsView.swift in Sources */,
 				82190ACB26EE0A10005028B4 /* ContentView.swift in Sources */,
 				82190AC926EE0A10005028B4 /* HoppzApp.swift in Sources */,
+				828F4ABE26F11A240058A303 /* Colors+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

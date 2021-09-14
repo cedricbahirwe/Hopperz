@@ -37,7 +37,7 @@ struct TabBarView: View {
             VStack(spacing: 5) {
                 Image(systemName: icon)
                     .imageScale(.large)
-                    .foregroundColor(index==selection ? .green : .secondary)
+                    .foregroundColor(index==selection ? .mainGreen : .secondary)
                 Text(title)
                     .font(.caption)
                     .foregroundColor(.secondary)
@@ -45,7 +45,7 @@ struct TabBarView: View {
             .padding(.top)
             .frame(width: 70)
             .overlay(
-                Color.green.opacity(index==selection ? 1 : 0)
+                Color.mainGreen.opacity(index==selection ? 1 : 0)
                     .frame(height: 5)
                 , alignment: .top
             )

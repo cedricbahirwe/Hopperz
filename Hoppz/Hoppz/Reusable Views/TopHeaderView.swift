@@ -12,7 +12,7 @@ struct TopHeaderView: View {
         Text("Hoppz")
             .textCase(.uppercase)
             .font(.largeTitle.bold())
-            .foregroundColor(.green)
+            .foregroundColor(.mainGreen)
             .frame(maxWidth: .infinity)
             .overlay(
                 NavigationLink(
@@ -20,7 +20,7 @@ struct TopHeaderView: View {
                     Label(
                         title: {
                             Text("1030")
-                                .foregroundColor(.green)
+                                .foregroundColor(.mainGreen)
                         },
                         icon: {
                             Image(systemName: "staroflife.circle.fill")

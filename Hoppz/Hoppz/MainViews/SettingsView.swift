@@ -18,9 +18,9 @@ struct SettingsView: View {
                     .scaledToFill()
                     .padding(10)
                     .frame(width: 80, height: 80)
-                    .background(Color.white)
+                    .background(Color(.systemBackground))
                     .clipShape(Circle())
-                    .overlay(Circle().strokeBorder(Color.green, lineWidth: 2))
+                    .overlay(Circle().strokeBorder(Color.mainGreen, lineWidth: 2))
                     .padding(.vertical, 20)
                 
                 Divider()
@@ -31,7 +31,7 @@ struct SettingsView: View {
                 }, label: {
                     Text("Invite a Hopper")
                         .font(.callout.weight(.semibold))
-                        .foregroundColor(.green)
+                        .foregroundColor(.mainGreen)
                         .frame(height: 35)
                 })
                 
@@ -68,8 +68,8 @@ struct SettingsView: View {
                     
                 }, label: {
                     Text("Log out")
-                        .font(.caption.weight(.light))
-                        .foregroundColor(.green)
+                        .font(.callout.weight(.light))
+                        .foregroundColor(.red)
                         .frame(height: 35)
                 })
                 

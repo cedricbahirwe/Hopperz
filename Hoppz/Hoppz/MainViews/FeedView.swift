@@ -48,7 +48,7 @@ struct FeedView: View {
                             }
                             .padding()
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(item.isSeen ? Color.clear : .green)
+                            .background(item.isSeen ? Color.clear : .mainGreen)
                             .contentShape(Rectangle())
                             .onTapGesture {
                                 withAnimation {

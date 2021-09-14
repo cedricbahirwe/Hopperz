@@ -44,13 +44,13 @@ struct HomeView: View {
                                 .resizable()
                                 .padding(5)
                                 .frame(width: 40, height: 40)
-                                .background(Color.white)
+                                .background(Color(.systemBackground))
                                 .clipShape(Circle())
-                                .overlay(Circle().strokeBorder(Color.green, lineWidth: 1))
+                                .overlay(Circle().strokeBorder(Color.mainGreen, lineWidth: 1))
                             
                             VStack(alignment: .leading) {
                                 Text("Cedric Bahirwe").bold()
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.mainGreen)
                                 
                                 Text("MIT University")
                                     .font(.caption)
@@ -61,7 +61,7 @@ struct HomeView: View {
                             Label(
                                 title: {
                                     Text("\((500...15000).randomElement()!)")
-                                        .foregroundColor(.green)
+                                        .foregroundColor(.mainGreen)
                                 },
                                 icon: {
                                     Image(systemName: "42.circle")

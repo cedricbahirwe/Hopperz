@@ -16,7 +16,7 @@ struct PointsView: View {
             Text("Hoppz")
                 .textCase(.uppercase)
                 .font(.largeTitle.bold())
-                .foregroundColor(.green)
+                .foregroundColor(.mainGreen)
                 .frame(maxWidth: .infinity)
                 .overlay(
                     Button(action: {
@@ -50,7 +50,7 @@ struct PointsView: View {
                                 .foregroundColor(.red)
                         )
                         .frame(width: 120, height: 120)
-                        .background(Color.green.cornerRadius(18))
+                        .background(Color.mainGreen.cornerRadius(18))
                     
                     
                     
@@ -87,12 +87,13 @@ struct PointsView: View {
                     
                 }
                 
-                .background(Color.green.opacity(0.6))
+                .background(Color.mainGreen.opacity(0.6))
                 .cornerRadius(15)
                 
             }
-
         }
+        .navigationTitle("")
+        .navigationBarHidden(true)
     }
 }
 
